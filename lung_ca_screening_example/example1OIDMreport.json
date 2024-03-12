@@ -1,0 +1,78 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "example1OIDMreport",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml*5C\"> 62 year old patient with no history of smoking presented\n\tfor lung screening.Right lung is clear.Solid,\n\tlobulated nodule located in the lower lobe of the left lung.Recommend 6 month follow up LDCT.Lung - RADS 3. < /div>",
+    "contained": [
+      {
+        "resourceType": "ImagingStudy",
+        "id": "example1OIDMstudy",
+        "status": "available",
+        "subject": {
+          "reference": "Patient/example1OIDM"
+        },
+        "description": "Thorax CHEST_CONTRAST (Adult)"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "394914008",
+          "display": "Radiology"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "RAD"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "87279-6",
+        "display": "CT Chest for Screening"
+      }
+    ],
+    "text": "CT Thorax - Low Dose"
+  },
+  "subject": {
+    "reference": "Patient/example1OIDM",
+    "display": "AMC-020"
+  },
+  "issued": "1994-12-02T11:18:10+05:00",
+  "study": [
+    {
+      "reference": "ImagingStudy/example1OIDMstudy"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/example1OIDMradiologist"
+    },
+    {
+      "reference": "Observation/example1OIDMradiologistLungRADS"
+    },
+    {
+      "reference": "Observation/example1smoking"
+    }
+  ],
+  "conclusion": "Solid, lobulated nodule located in the lower lobe of the left lung.",
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "786838002",
+          "display": "Nodule of lung"
+        }
+      ]
+    }
+  ]
+}

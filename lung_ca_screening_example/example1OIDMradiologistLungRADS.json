@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "example1OIDMradiologistLungRADS",
+  "code": {
+    "coding": [
+      {
+        "system": "https://radelement.org",
+        "code": "RDES267",
+        "display": "Lung-RADS Observation"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/example1OIDM"
+  },
+  "derivedFrom": [
+    {
+      "reference": "ImagingStudy/example1OIDMstudy"
+    },
+    {
+      "reference": "Observation/example1OIDMradiologist"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://radelement.org",
+            "code": "RDE1702",
+            "display": "Category of findings"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "RDE1702.11",
+            "display": "Lung-RADS 3: probably benign, solid nodule"
+          }
+        ]
+      }
+    }
+  ]
+}

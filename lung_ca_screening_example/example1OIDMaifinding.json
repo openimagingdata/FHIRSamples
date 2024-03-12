@@ -1,0 +1,56 @@
+{
+  "resourceType": "Observation",
+  "id": "example1OIDMaifinding",
+  "code": {
+    "coding": [
+      {
+        "system": "https://radelement.org",
+        "code": "RDES195",
+        "display": "Pulmonary Nodule"
+      }
+    ]
+  },
+  "status": "preliminary",
+  "subject": {
+    "reference": "Patient/example1OIDM"
+  },
+  "derivedFrom": [
+    {
+      "reference": "ImagingStudy/example1OIDMstudy"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "RDE1717"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "RDE1717.1"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "RDE1304"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "RDE1304.4"
+          }
+        ]
+      }
+    }
+  ]
+}
