@@ -1,6 +1,6 @@
 ## Chest CT Findings
 
-<img src="chest_ct_report/2024-03-13_16-53-59.png">
+<img src="./2024-03-13_16-53-59.png">
 
 - Pulmonary nodules
   - "No new or enlarging"
